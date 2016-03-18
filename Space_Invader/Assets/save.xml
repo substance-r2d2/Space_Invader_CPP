@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<States>
+    <SAVE>
+        <ITEM>
+            <score Highscore="0"/>
+          </ITEM>
+    </SAVE>
+</States>

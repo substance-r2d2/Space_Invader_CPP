@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<States>
+    <MENU>
+        <TEXTURES>
+            <texture filename="button.png" ID="playbutton" />
+            <texture filename="exit.png" ID="exitbutton" />
+        </TEXTURES>
+        <OBJECTS>
+            <object type="MenuButton" x="200" y="100" width="200" height="80" textureID="playbutton" numFrames="0" callbackID="1" />
+            <object type="MenuButton" x="200" y="300" width="200" height="80" textureID="exitbutton" numFrames="0" callbackID="2" />
+        </OBJECTS>
+    </MENU>
+    <PLAY>
+        <TEXTURES>
+            <texture filename="playership.png" ID="playership" />
+            <texture filename="Invaders.png" ID="enemy1" />
+            <texture filename="shipIcon.png" ID="playericon" />
+            <texture filename="bullet.png" ID="bullet" />
+            <texture filename="enemybullet.png" ID="enemybullet" />
+            <texture filename="bar.png" ID="bar" />
+            <texture filename="ghar.png" ID="bunker" />
+        </TEXTURES>
+        <OBJECTS>
+            <object type="Player" x="500" y="415" width="45" height="25" textureID="playership" numFrames="1" />
+            <object type="Enemy" x="100" y="100" width="128" height="55" textureID="helicopter2" numFrames="4" />
+            <object type="AnimatedGraphic" x="0" y="0" width="640" height="5" textureID="bar" numFrames="1" animSpeed="1" />
+            <object type="AnimatedGraphic" x="0" y="450" width="640" height="5" textureID="bar" numFrames="1" animSpeed="1" />
+            <object type="Bunker" x="30" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="30" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="45" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="60" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="60" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="230" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="230" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="245" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="260" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="260" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="380" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="380" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="395" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="410" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="410" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="530" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="530" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="545" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="560" y="380" width="15" height="15" textureID="bunker" numFrames="3" />
+            <object type="Bunker" x="560" y="395" width="15" height="15" textureID="bunker" numFrames="3" />
+        </OBJECTS>
+    </PLAY>
+    <PAUSE>
+        <TEXTURES>
+            <texture filename="resume.png" ID="resumebutton" />
+            <texture filename="main.png" ID="mainbutton" />
+        </TEXTURES>
+        <OBJECTS>
+            <object type="MenuButton" x="200" y="300" width="200" height="80" textureID="resumebutton" numFrames="0" callbackID="2" />
+        </OBJECTS>
+    </PAUSE>
+    <GAMEOVER>
+        <TEXTURES>
+            <texture filename="gameover.png" ID="gameovertext" />
+            <texture filename="main.png" ID="mainbutton" />
+            <texture filename="restart.png" ID="restartbutton" />
+        </TEXTURES>
+        <OBJECTS>
+            <object type="AnimatedGraphic" x="200" y="50" width="200" height="53" textureID="gameovertext" numFrames="2" animSpeed="1" />
+            <object type="MenuButton" x="200" y="200" width="200" height="80" textureID="mainbutton" numFrames="0" callbackID="1" />
+            <object type="MenuButton" x="200" y="300" width="200" height="80" textureID="restartbutton" numFrames="0" callbackID="2" />
+        </OBJECTS>
+    </GAMEOVER>
+    <SAVE>
+        <OBJECTS>
+            <object score="700" />
+        </OBJECTS>
+    </SAVE>
+</States>
